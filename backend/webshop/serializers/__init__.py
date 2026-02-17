@@ -1,4 +1,4 @@
-from .user_serializer import UserSerializer
+from .user_serializer import UserSerializer, RegisterSerializer
 from .address_serializer import AddressSerializer
 from .product_serializer import ProductSerializer
 from .order_serializer import OrderSerializer, OrderItemSerializer
@@ -13,4 +13,5 @@ __all__ = ["UserSerializer",
            "OrderItemSerializer",
            "CartSerializer",
            "CartItemSerializer",
-           "CategorySerializer"]
+           "CategorySerializer",
+           "RegisterSerializer"]

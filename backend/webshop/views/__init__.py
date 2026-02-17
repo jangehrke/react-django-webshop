@@ -1,7 +1,7 @@
-from .product import ProductView, ProductByCategory
+from .product import ProductView, ProductByCategory, SingleProductView
 from .user import UserView
 from .category import CategoryView
 from .cart import CartView
 
 
-__all__ = ["ProductView", "UserView", "CategoryView", "ProductByCategory", "CartView"]
+__all__ = ["ProductView", "UserView", "CategoryView", "ProductByCategory", "CartView", "SingleProductView"]

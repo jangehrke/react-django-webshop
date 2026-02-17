@@ -20,6 +20,7 @@ from rest_framework import routers
 from rest_framework_simplejwt.views import TokenObtainPairView, TokenRefreshView
 
 from webshop import views
+from webshop.views.user import RegisterView
 
 router = routers.DefaultRouter()
 router.register(r'product', views.ProductView, 'products')
@@ -33,5 +34,7 @@ urlpatterns = [
     path('api/', include(router.urls)),
     path('api/token/', TokenObtainPairView.as_view(), name='token_obtain_pair'),
     path('api/token/refresh/', TokenRefreshView.as_view(), name='token_refresh'),
+    path('api/auth/register', RegisterView.as_view(), name='register'),
     path('api/category/<slug:slug>/product', views.ProductByCategory.as_view(), name='product_category'),
+    path('api/product/<int:product_id>', views.SingleProductView.as_view(), name='product'),
 ]
