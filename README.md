@@ -21,11 +21,16 @@ source venv/bin/activate
 python manage.py migrate
 python manage.py loaddata db_data.json
 ```
+
+### Starting the Backend Server
+```
+python manage.py runserver
+```
 ----------------------------------------------
 ## Frontend
 
 ```
-cd ../frontend
+cd frontend
 ```
 
 ### Install packages
@@ -41,7 +46,7 @@ cd ../frontend
 ## User 1
 ```
 Email: test@test.de
-password: TestTest123!
+password: Lolkikjuj123!
 ```
 
 ## User 2
